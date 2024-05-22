@@ -1,12 +1,12 @@
 // import { Button } from "../Button/Button";
 import ToggleButton from "../ToggleButton/ToggleButton";
-import { HeaderContainer,HeaderGrouped,NavLinksContainer } from "./NavBar.style";
+import { HeaderContainer,HeaderGrouped,Logo,NavLinksContainer } from "./NavBar.style";
 
 
 const NavBar = () => {
   return (
     <HeaderContainer>
-        <h1>Newsletter</h1>
+        <Logo href="">Newsletter</Logo>
         <HeaderGrouped>
         <ToggleButton></ToggleButton>
             <NavLinksContainer>

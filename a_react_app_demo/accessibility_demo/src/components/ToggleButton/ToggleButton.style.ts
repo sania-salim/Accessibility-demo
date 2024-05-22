@@ -1,22 +1,14 @@
 import styled from "styled-components";
 
-export const StyledToggleButton = styled.button`
-  color: ${({theme})=>theme.colors.primaryTextColor};
-  background-color: ${({theme})=>theme.colors.primaryColor};
-  border: none;
-  border-radius: 20px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 2px;
-  transition: background-color 0.3s ease;
-
-  &:focus {
-    outline: none;
-  }
-`;
+export const ThemeToggleButton = styled.button`
+  width: 50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background-color:black;
+`
 
 export const ToggleIcon = styled.div`
   width: 16px;

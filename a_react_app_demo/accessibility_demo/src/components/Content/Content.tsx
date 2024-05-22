@@ -1,8 +1,9 @@
-import whale from '../../assets/whale.png'
+import whale from '../../assets/gabriel-dizzi-WPXxp36tkHQ-unsplash(1).jpg'
+import { ContentWrapper, ImageHolder } from './Content.style'
 
 const Content = () => {
   return (
-    <article>
+    <ContentWrapper>
     <header>
       <h1>Oceans in Peril: The Tragic Death of Sharks and Whales and Its Ecological Footprint</h1>
     </header>
@@ -14,9 +15,9 @@ const Content = () => {
       </p>
     </section>
 
-    <section>
+    <ImageHolder>
      <img src={whale} alt="picture of a mighty whale" />
-    </section>
+    </ImageHolder>
 
     <section>
       <h2>Ecological Footprint</h2>
@@ -72,7 +73,7 @@ const Content = () => {
       </p>
 
     </section>
-  </article>
+  </ContentWrapper>
   )
 }
 

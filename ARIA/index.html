@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARIA Example</title>
+</head>
+<body>
+
+<!-- Div element acting as a button -->
+<div id="myButton" role="button" tabindex="0" onclick="handleButtonClick()" onkeydown="handleButtonKeyDown(event)">
+    Click me!
+</div>
+
+<script>
+    
+function handleButtonClick() {
+    alert("Button clicked!");
+}
+
+function handleButtonKeyDown(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        handleButtonClick();
+    }
+}
+</script>
+
+</body>
+</html>

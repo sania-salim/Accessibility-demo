@@ -8,8 +8,14 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
   }
 
+  html{
+    padding:0;
+    margin:0;
+    width: 100%;
+  }
+
   body {
-    max-width: 1200px;
+    max-width: 1400px;
     display:flex;
     padding: 0 ;
     margin: 0 auto;
@@ -20,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #root{
+    padding:0;
+    margin:0;
     width: 100%;
   }
 

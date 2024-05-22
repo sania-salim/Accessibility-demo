@@ -1,5 +1,8 @@
 import useTheme from "../../useTheme"
-import { StyledToggleButton } from "./ToggleButton.style";
+import { ThemeToggleButton } from "./ToggleButton.style";
+import sun from '../../assets/sun.svg'
+import moon from '../../assets/moon.svg'
+import { MouseEventHandler } from "react";
 
 
 const ToggleButton = () => {
@@ -7,9 +10,9 @@ const ToggleButton = () => {
     const [theme, toggleTheme] =useTheme();
     
   return (
-    <StyledToggleButton onClick={()=>toggleTheme}>
-
-    </StyledToggleButton>
+    <ThemeToggleButton onClick={toggleTheme as MouseEventHandler<HTMLButtonElement>}>
+      {theme === 'light' ? <img src={sun} alt="Sun icon" /> : <img src={moon} alt="Moon icon" />}
+    </ThemeToggleButton>
   )
 }
 
